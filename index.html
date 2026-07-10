@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:#FAFAFA; color:#18181B; font-family:'Space Grotesk',system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  a{ color:#1E40AF; text-decoration:none; }
+  a:hover{ color:#16309a; }
+  ::selection{ background:#1E40AF; color:#fff; }
+  @media (max-width:760px){ #nd-nav-links{ display:none !important; } }
+</style>
+</helmet>
+<div id="nd-root" style="width:100%; overflow-x:hidden;">
+
+  <header style="position:sticky; top:0; z-index:50; backdrop-filter:blur(10px); background:rgba(250,250,250,0.82); border-bottom:1px solid #ECECEC;">
+    <div style="max-width:1080px; margin:0 auto; padding:14px 24px; display:flex; align-items:center; justify-content:space-between; gap:16px;">
+      <a href="#nd-root" style="display:flex; align-items:center; gap:10px; color:#18181B;">
+        <span style="width:30px; height:30px; border-radius:50%; background:#1E40AF; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; letter-spacing:0.5px;">ND</span>
+        <span style="font-weight:600; font-size:15px;">Nathan Dalton</span>
+      </a>
+      <nav id="nd-nav-links" style="display:flex; align-items:center; gap:26px; font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:0.3px; color:#52525B;">
+        <a href="#about" style="color:#52525B;">about</a>
+        <a href="#skills" style="color:#52525B;">skills</a>
+        <a href="#experience" style="color:#52525B;">experience</a>
+        <a href="#projects" style="color:#52525B;">projects</a>
+        <a href="#education" style="color:#52525B;">education</a>
+        <a href="#contact" style="color:#52525B;">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="max-width:1080px; margin:0 auto; padding:0 24px;">
+
+    <!-- HERO -->
+    <section style="padding:72px 0 44px;">
+      <div data-reveal style="opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; display:flex; flex-wrap:wrap; align-items:center; gap:40px;">
+        <div aria-label="Nathan Dalton monogram" style="flex:0 0 auto; width:132px; height:132px; border-radius:50%; background:#1E40AF; color:#fff; display:flex; align-items:center; justify-content:center; font-size:46px; font-weight:700; letter-spacing:1px; box-shadow:0 12px 40px -12px rgba(30,64,175,0.5);">ND</div>
+        <div style="flex:1 1 340px; min-width:280px;">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:1.5px; color:#1E40AF; text-transform:uppercase; margin-bottom:12px;">Data Analytics · New York, NY</div>
+          <h1 style="margin:0 0 12px; font-size:clamp(38px,6vw,60px); line-height:1.02; letter-spacing:-1.5px; font-weight:700;">Nathan Dalton</h1>
+          <p style="margin:0 0 26px; font-size:clamp(16px,2.2vw,20px); line-height:1.5; color:#3F3F46; max-width:560px;">Data Analytics Student &nbsp;·&nbsp; Python · SQL · Tableau · Power BI</p>
+          <div style="display:flex; flex-wrap:wrap; gap:12px;">
+            <a href="mailto:natexdalton@gmail.com" style="display:inline-flex; align-items:center; gap:8px; background:#1E40AF; color:#fff; padding:12px 22px; border-radius:8px; font-size:14px; font-weight:600;">Email me</a>
+            <a href="#" style="display:inline-flex; align-items:center; gap:8px; background:#fff; color:#18181B; padding:12px 22px; border-radius:8px; font-size:14px; font-weight:600; border:1px solid #E4E4E7;" style-hover="border-color:#1E40AF; color:#1E40AF;">LinkedIn</a>
+            <a href="#" style="display:inline-flex; align-items:center; gap:8px; background:#fff; color:#18181B; padding:12px 22px; border-radius:8px; font-size:14px; font-weight:600; border:1px solid #E4E4E7;" style-hover="border-color:#1E40AF; color:#1E40AF;">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPI STRIP -->
+      <div data-reveal style="opacity:0; transform:translateY(18px); transition:opacity .7s ease .1s, transform .7s ease .1s; margin-top:44px; display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:#ECECEC; border:1px solid #ECECEC; border-radius:12px; overflow:hidden;">
+        <div style="background:#FAFAFA; padding:22px 20px;">
+          <div data-count="3.9" data-decimals="1" style="font-family:'JetBrains Mono',monospace; font-weight:600; font-size:clamp(28px,4vw,38px); color:#1E40AF; line-height:1;">3.9</div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.5px; color:#71717A; margin-top:8px; text-transform:uppercase;">GPA / 4.0</div>
+        </div>
+        <div style="background:#FAFAFA; padding:22px 20px;">
+          <div data-count="94" data-suffix="%" style="font-family:'JetBrains Mono',monospace; font-weight:600; font-size:clamp(28px,4vw,38px); color:#1E40AF; line-height:1;">94%</div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.5px; color:#71717A; margin-top:8px; text-transform:uppercase;">Peak model accuracy</div>
+        </div>
+        <div style="background:#FAFAFA; padding:22px 20px;">
+          <div data-count="100" data-suffix="K+" style="font-family:'JetBrains Mono',monospace; font-weight:600; font-size:clamp(28px,4vw,38px); color:#1E40AF; line-height:1;">100K+</div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.5px; color:#71717A; margin-top:8px; text-transform:uppercase;">Records analyzed</div>
+        </div>
+        <div style="background:#FAFAFA; padding:22px 20px;">
+          <div data-count="90" data-suffix="+" style="font-family:'JetBrains Mono',monospace; font-weight:600; font-size:clamp(28px,4vw,38px); color:#1E40AF; line-height:1;">90+</div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.5px; color:#71717A; margin-top:8px; text-transform:uppercase;">Coaching hours</div>
+        </div>
+      </div>
+
+      <!-- SPARKLINE -->
+      <div id="nd-spark" data-reveal style="opacity:0; transform:translateY(18px); transition:opacity .7s ease .15s, transform .7s ease .15s; margin-top:20px;">
+        <svg viewBox="0 0 1200 200" preserveAspectRatio="none" style="display:block; width:100%; height:110px;">
+          <line x1="0" y1="199" x2="1200" y2="199" stroke="#ECECEC" stroke-width="1" vector-effect="non-scaling-stroke"></line>
+          <line x1="0" y1="100" x2="1200" y2="100" stroke="#F0F0F0" stroke-width="1" vector-effect="non-scaling-stroke"></line>
+          <path d="M0,150 L80,140 L160,155 L240,120 L320,135 L400,100 L480,115 L560,85 L640,95 L720,70 L800,80 L880,55 L960,65 L1040,40 L1120,50 L1200,30 L1200,200 L0,200 Z" fill="#1E40AF" opacity="0.06"></path>
+          <path id="nd-spark-path" d="M0,150 L80,140 L160,155 L240,120 L320,135 L400,100 L480,115 L560,85 L640,95 L720,70 L800,80 L880,55 L960,65 L1040,40 L1120,50 L1200,30" fill="none" stroke="#1E40AF" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" pathLength="1" style="stroke-dasharray:1; stroke-dashoffset:1; transition:stroke-dashoffset 2.2s cubic-bezier(.22,.61,.36,1);"></path>
+          <circle id="nd-spark-dot" cx="1200" cy="30" r="4" fill="#1E40AF" vector-effect="non-scaling-stroke" style="opacity:0; transition:opacity .5s ease 2s;"></circle>
+        </svg>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.5px; color:#A1A1AA; margin-top:2px;">fig.01 — trajectory</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" data-reveal style="opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; padding:64px 0; border-top:1px solid #ECECEC;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:1.5px; color:#1E40AF; text-transform:uppercase; margin-bottom:20px;">01 — About</div>
+      <p style="margin:0; font-size:clamp(20px,3vw,28px); line-height:1.45; font-weight:500; letter-spacing:-0.4px; max-width:820px; color:#27272A; text-wrap:pretty;">A Data Analytics student at Baruch College building predictive models and data-driven insights across Python, SQL, Tableau, and Power BI. Experience spans machine learning research on 100,000+ records, hackathon analytics on NYC Open Data, and hands-on training through the NYC Tech Talent Pipeline residency — alongside tutoring 100+ peers in computer information systems.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" data-reveal style="opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; padding:64px 0; border-top:1px solid #ECECEC;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:1.5px; color:#1E40AF; text-transform:uppercase; margin-bottom:8px;">02 — Skills &amp; Qualifications</div>
+      <h2 style="margin:0 0 32px; font-size:clamp(26px,4vw,36px); letter-spacing:-0.8px; font-weight:700;">The toolkit</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px;">
+
+        <sc-for list="{{ skillGroups }}" as="g" hint-placeholder-count="4">
+          <div style="background:#fff; border:1px solid #ECECEC; border-radius:12px; padding:22px;">
+            <div style="display:flex; align-items:baseline; justify-content:space-between; gap:8px; margin-bottom:14px;">
+              <div style="font-weight:600; font-size:15px; letter-spacing:-0.2px;">{{ g.name }}</div>
+              <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#A1A1AA;">{{ g.count }}</div>
+            </div>
+            <div style="display:flex; gap:4px; margin-bottom:16px;">
+              <sc-for list="{{ g.ticks }}" as="t" hint-placeholder-count="4">
+                <div style="height:5px; flex:1 1 0; border-radius:3px; background:#1E40AF; opacity:0.85;"></div>
+              </sc-for>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <sc-for list="{{ g.items }}" as="s" hint-placeholder-count="4">
+                <span style="font-family:'JetBrains Mono',monospace; font-size:12px; padding:6px 11px; border:1px solid #E4E4E7; border-radius:6px; color:#3F3F46; background:#FAFAFA;">{{ s }}</span>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" data-reveal style="opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; padding:64px 0; border-top:1px solid #ECECEC;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:1.5px; color:#1E40AF; text-transform:uppercase; margin-bottom:8px;">03 — Experience</div>
+      <h2 style="margin:0 0 32px; font-size:clamp(26px,4vw,36px); letter-spacing:-0.8px; font-weight:700;">Where I've worked</h2>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <sc-for list="{{ experience }}" as="job" hint-placeholder-count="2">
+          <div style="background:#fff; border:1px solid #ECECEC; border-radius:12px; padding:26px;">
+            <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px; margin-bottom:4px;">
+              <h3 style="margin:0; font-size:19px; font-weight:600; letter-spacing:-0.3px;">{{ job.role }}</h3>
+              <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A;">{{ job.dates }}</span>
+            </div>
+            <div style="color:#1E40AF; font-size:14px; font-weight:500; margin-bottom:16px;">{{ job.org }}</div>
+            <ul style="margin:0; padding-left:20px; display:flex; flex-direction:column; gap:9px;">
+              <sc-for list="{{ job.bullets }}" as="b" hint-placeholder-count="3">
+                <li style="font-size:14.5px; line-height:1.55; color:#3F3F46; text-wrap:pretty;">{{ b }}</li>
+              </sc-for>
+            </ul>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" data-reveal style="opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; padding:64px 0; border-top:1px solid #ECECEC;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:1.5px; color:#1E40AF; text-transform:uppercase; margin-bottom:8px;">04 — Projects</div>
+      <h2 style="margin:0 0 32px; font-size:clamp(26px,4vw,36px); letter-spacing:-0.8px; font-weight:700;">Selected work</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px;">
+        <sc-for list="{{ projects }}" as="p" hint-placeholder-count="2">
+          <div style="background:#fff; border:1px solid #ECECEC; border-radius:12px; padding:26px; display:flex; flex-direction:column; transition:border-color .2s ease, box-shadow .2s ease;" style-hover="border-color:#1E40AF; box-shadow:0 14px 40px -20px rgba(30,64,175,0.35);">
+            <div style="display:flex; align-items:baseline; justify-content:space-between; gap:8px; margin-bottom:12px;">
+              <span style="font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.5px; color:#71717A;">{{ p.venue }}</span>
+              <span style="font-family:'JetBrains Mono',monospace; font-size:11.5px; color:#A1A1AA;">{{ p.date }}</span>
+            </div>
+            <h3 style="margin:0 0 4px; font-size:19px; font-weight:600; letter-spacing:-0.3px; line-height:1.25;">{{ p.title }}</h3>
+            <div style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#1E40AF; margin-bottom:16px;">{{ p.team }}</div>
+            <ul style="margin:0 0 18px; padding-left:20px; display:flex; flex-direction:column; gap:9px;">
+              <sc-for list="{{ p.bullets }}" as="b" hint-placeholder-count="3">
+                <li style="font-size:14px; line-height:1.55; color:#3F3F46; text-wrap:pretty;">{{ b }}</li>
+              </sc-for>
+            </ul>
+            <div style="margin-top:auto; display:flex; flex-wrap:wrap; gap:7px;">
+              <sc-for list="{{ p.tools }}" as="t" hint-placeholder-count="4">
+                <span style="font-family:'JetBrains Mono',monospace; font-size:11px; padding:4px 9px; border-radius:5px; background:rgba(30,64,175,0.07); color:#1E40AF;">{{ t }}</span>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" data-reveal style="opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; padding:64px 0; border-top:1px solid #ECECEC;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:1.5px; color:#1E40AF; text-transform:uppercase; margin-bottom:8px;">05 — Education</div>
+      <h2 style="margin:0 0 32px; font-size:clamp(26px,4vw,36px); letter-spacing:-0.8px; font-weight:700;">Academic background</h2>
+      <div style="background:#fff; border:1px solid #ECECEC; border-radius:12px; padding:28px;">
+        <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px;">
+          <h3 style="margin:0; font-size:20px; font-weight:600; letter-spacing:-0.3px;">Baruch College, CUNY</h3>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A;">May 2027 (Expected)</span>
+        </div>
+        <div style="color:#3F3F46; font-size:14.5px; margin-top:6px;">BBA in Computer Information Systems — Data Analytics Concentration</div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:18px;">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; padding:7px 12px; border-radius:6px; background:rgba(30,64,175,0.07); color:#1E40AF; font-weight:600;">GPA 3.9 / 4.0</span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; padding:7px 12px; border-radius:6px; background:rgba(30,64,175,0.07); color:#1E40AF; font-weight:600;">Dean's List</span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; padding:7px 12px; border-radius:6px; border:1px solid #E4E4E7; color:#3F3F46;">Machine Learning &amp; Data Science Club</span>
+        </div>
+        <div style="margin-top:24px; border-top:1px solid #F0F0F0; padding-top:20px;">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.5px; color:#71717A; text-transform:uppercase; margin-bottom:12px;">Relevant Coursework</div>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;">
+            <sc-for list="{{ coursework }}" as="c" hint-placeholder-count="5">
+              <span style="font-size:13px; padding:6px 11px; border:1px solid #E4E4E7; border-radius:6px; color:#3F3F46; background:#FAFAFA;">{{ c }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" data-reveal style="opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; padding:72px 0 80px; border-top:1px solid #ECECEC;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:1.5px; color:#1E40AF; text-transform:uppercase; margin-bottom:16px;">06 — Contact</div>
+      <h2 style="margin:0 0 14px; font-size:clamp(30px,5vw,48px); letter-spacing:-1px; font-weight:700;">Let's talk data.</h2>
+      <p style="margin:0 0 30px; font-size:17px; color:#3F3F46; max-width:520px; line-height:1.5;">Open to Data Analytics internships and roles. The fastest way to reach me is email.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:44px;">
+        <a href="mailto:natexdalton@gmail.com" style="display:inline-flex; align-items:center; gap:8px; background:#1E40AF; color:#fff; padding:13px 24px; border-radius:8px; font-size:14px; font-weight:600;">natexdalton@gmail.com</a>
+        <a href="tel:+12169568866" style="display:inline-flex; align-items:center; gap:8px; background:#fff; color:#18181B; padding:13px 24px; border-radius:8px; font-size:14px; font-weight:600; border:1px solid #E4E4E7;" style-hover="border-color:#1E40AF; color:#1E40AF;">(216) 956-8866</a>
+        <a href="#" style="display:inline-flex; align-items:center; gap:8px; background:#fff; color:#18181B; padding:13px 24px; border-radius:8px; font-size:14px; font-weight:600; border:1px solid #E4E4E7;" style-hover="border-color:#1E40AF; color:#1E40AF;">LinkedIn</a>
+        <a href="#" style="display:inline-flex; align-items:center; gap:8px; background:#fff; color:#18181B; padding:13px 24px; border-radius:8px; font-size:14px; font-weight:600; border:1px solid #E4E4E7;" style-hover="border-color:#1E40AF; color:#1E40AF;">GitHub</a>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; border-top:1px solid #ECECEC; padding-top:22px;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="width:26px; height:26px; border-radius:50%; background:#1E40AF; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700; font-size:11px;">ND</span>
+          <span style="font-size:13.5px; color:#52525B;">Nathan Dalton · New York, NY</span>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11.5px; color:#A1A1AA;">Built to turn data into decisions.</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      skillGroups: [
+        { name: 'Languages & Query', count: '02', ticks: [1,2], items: ['Python — Proficient', 'SQL — Intermediate'] },
+        { name: 'BI & Analytics', count: '05', ticks: [1,2,3,4,5], items: ['Tableau', 'Power BI', 'Excel', 'Microsoft 365', 'Snowflake'] },
+        { name: 'Python Libraries', count: '05', ticks: [1,2,3,4,5], items: ['Pandas', 'Numpy', 'Seaborn', 'Matplotlib', 'Scikit-Learn'] },
+        { name: 'Developer Tools', count: '03', ticks: [1,2,3], items: ['MS Visual Studio', 'Google Colab', 'Git'] },
+      ],
+      experience: [
+        {
+          role: 'Peer Tutor',
+          org: 'Baruch College · New York, NY',
+          dates: 'Jan 2026 — Present',
+          bullets: [
+            'Enhanced academic performance for 100+ students in Computer Information Systems and Excel, achieving a 20% average grade improvement between midterm and final exams.',
+            'Developed customized learning materials, including code tracing exercises and Excel datasets, accelerating student preparedness for 16+ quizzes and exams.',
+            'Expanded the tutoring program to cover 5 more subjects, boosting course coverage by 60% and enabling more targeted academic support for students.',
+            'Applied adaptive strategies to boost engagement and reinforce concept mastery for diverse learners across 6 courses.',
+          ],
+        },
+        {
+          role: 'Data Analytics Track Resident',
+          org: 'NYC Tech Talent Pipeline Residency Program',
+          dates: 'Jun 2026 — Present',
+          bullets: [
+            'Engaged in 90+ hours of career coaching, a full-time intensive coding bootcamp, professional development workshops, and networking events with NYC tech professionals.',
+            'Developed regression models for datasets consisting of 1,000+ rows, using Power BI and Power Query in Microsoft Excel.',
+            'Leveraged Snowflake for data warehousing tasks and strengthened Python and Data Analytics skills across Tableau, regression models, and machine learning over a 12-week program.',
+          ],
+        },
+      ],
+      projects: [
+        {
+          title: 'Predictive Model of Airline Passenger Satisfaction Using Machine Learning',
+          venue: 'Research and Creative Inquiry Expo',
+          date: 'May 2026',
+          team: 'Team of 3',
+          bullets: [
+            'Developed and evaluated four machine learning models (Logistic Regression, KNN, Random Forest, SVM) on 100,000 passenger records, achieving 94% peak accuracy.',
+            'Improved model reliability by 6% through SMOTE oversampling to address class imbalance, enhancing generalization.',
+            'Led a 3-person project team, establishing task assignments and managing professor communications to deliver a comprehensive research initiative.',
+            'Exhibited research findings at the Baruch College Research and Creative Inquiry Expo to 250+ attendees.',
+          ],
+          tools: ['Logistic Regression', 'KNN', 'Random Forest', 'SVM', 'SMOTE'],
+        },
+        {
+          title: "The Interborough Express (IBX) Proposals' Impact on Air Quality and Economy",
+          venue: 'CUNY Civics Hackathon',
+          date: 'Feb 2026',
+          team: 'Team of 5',
+          bullets: [
+            'Extracted and analyzed air quality and pollutant data across 19 IBX corridor stops using SQL, Python, Pandas, and Seaborn with NYC Open Data to produce 4 visualizations tracking environmental conditions along the route.',
+            'Reinforced the proposal with quantified environmental evidence projected to expand access for 500,000+ daily commuters.',
+            'Created an interactive geospatial application to model the proposed IBX transit corridor, leveraging GIS analysis to assess connectivity, infrastructure coverage, and commuter accessibility.',
+            'Presented a data-driven transit proposal for the IBX Brooklyn crosstown corridor to a panel of judges, demonstrating potential connectivity gains across 17 subway lines.',
+          ],
+          tools: ['SQL', 'Python', 'Pandas', 'Seaborn', 'NYC Open Data', 'GIS'],
+        },
+      ],
+      coursework: [
+        'Database Management Systems',
+        'Data Mining',
+        'Programming for Analytics',
+        'Foundations of Predictive Analysis',
+        'Programming and Computational Thinking',
+      ],
+    };
+  }
+
+  componentDidMount() {
+    this._tries = 0;
+    this.setupReveal();
+  }
+
+  setupReveal() {
+    const root = document.getElementById('nd-root');
+    if (!root) {
+      if ((this._tries = (this._tries || 0) + 1) < 120) setTimeout(() => this.setupReveal(), 30);
+      return;
+    }
+    if (this._io) return;
+    this._io = true;
+
+    // Reveal by scroll position. Uses timers + scroll listeners (not IntersectionObserver
+    // or requestAnimationFrame, both unreliable / throttled inside some preview hosts).
+    const targets = Array.from(root.querySelectorAll('[data-reveal],[data-count]'));
+
+    const reveal = (el) => {
+      if (el._revealed) return;
+      el._revealed = true;
+      if (el.hasAttribute('data-reveal')) { el.style.opacity = '1'; el.style.transform = 'none'; }
+      if (el.id === 'nd-spark') {
+        const p = el.querySelector('#nd-spark-path'); if (p) p.style.strokeDashoffset = '0';
+        const dot = el.querySelector('#nd-spark-dot'); if (dot) dot.style.opacity = '1';
+      }
+      if (el.hasAttribute('data-count')) { try { this.countUp(el); } catch (err) { console.error('countUp failed', err); } }
+    };
+
+    const check = () => {
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      let remaining = 0;
+      targets.forEach((el) => {
+        if (el._revealed) return;
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.9 && r.bottom > 0) reveal(el);
+        else remaining++;
+      });
+      if (remaining === 0 && this._pollId) { clearInterval(this._pollId); this._pollId = null; }
+      return remaining;
+    };
+
+    this._pollId = setInterval(check, 140);
+    ['scroll', 'wheel', 'touchmove', 'resize'].forEach((ev) =>
+      window.addEventListener(ev, check, { passive: true }));
+    check();
+    setTimeout(check, 100);
+
+    // Safety net: never leave content permanently hidden if scroll can't be observed.
+    setTimeout(() => { targets.forEach((el) => { if (!el._revealed) reveal(el); }); }, 5000);
+  }
+
+  countUp(el) {
+    const target = parseFloat(el.getAttribute('data-count'));
+    const dec = parseInt(el.getAttribute('data-decimals') || '0', 10);
+    const pre = el.getAttribute('data-prefix') || '';
+    const suf = el.getAttribute('data-suffix') || '';
+    const dur = 1500;
+    const fmt = (v) => pre + v.toFixed(dec) + suf;
+    const finalTxt = fmt(target);
+    el.textContent = fmt(0);
+    const start = Date.now();
+    const timer = setInterval(() => {
+      const t = Math.min(1, (Date.now() - start) / dur);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = fmt(target * eased);
+      if (t >= 1) { clearInterval(timer); el.textContent = finalTxt; }
+    }, 33);
+    // Guarantee the final value even if the interval is throttled/paused.
+    setTimeout(() => { clearInterval(timer); el.textContent = finalTxt; }, dur + 400);
+  }
+}
+</script>
+</body>
+</html>
